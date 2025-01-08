@@ -8,8 +8,8 @@ function App() {
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
-        <p className="large">
-          Edit <code>src/App.jsx</code> and save to reload. :p
+        <p className="small">
+          Edit <code>src/App.jsx</code> and save to reload.
         </p>
         <p>Wassup!</p>
         <p>
