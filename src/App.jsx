@@ -11,6 +11,7 @@ function App() {
         <p className="small">
           What da figma
         </p>
+        <p>Hello!</p>
         <p>
           <a
             className="App-link"
