@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  transition-duration: 300ms;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 20px;
+  width: 200px;
+  justify-content: space-between;
+  width: 40px;
+  height: 100vh;
+  background-color: rgb(240, 230, 240);
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#link {
+  text-decoration: none; /* no underline */
+  color: rgb(50, 45, 50);
+}
+
+ul:hover {
+  width: 150px;
+}
+
+li {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+li:hover {
+  background-color: #555;
+  color: white;
+}
