@@ -1,13 +1,10 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
-import { BrowserRouter, NavLink } from "react-router";
 import './Home.css';
 
-function Home() {
+export default function Home() {
   return (<>
+    <h1>Home</h1>
     
-    </>
-  );
+  </>);
 }
-
-export default Home;

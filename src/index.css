@@ -12,7 +12,21 @@ code {
     monospace;
 }
 
-ul {
+.column {
+  float: left;
+}
+#left-column {
+  width: 50px;
+  position: relative;
+  z-index: 2;
+}
+#right-column {
+  position: relative;
+  z-index: 1;
+  padding-left: 35px;
+}
+
+ul.Sidebar {
   transition-duration: 300ms;
   list-style-type: none;
   margin: 0;
@@ -20,14 +34,17 @@ ul {
   padding-top: 20px;
   width: 200px;
   justify-content: space-between;
-  width: 40px;
+  width: 50px;
   height: 100vh;
-  background-color: rgb(240, 230, 240);
+  background-color: rgb(230, 220, 230);
   text-overflow: clip;
   white-space: nowrap;
   overflow: hidden;
   font-size: 14px;
   font-weight: 600;
+}
+ul.Sidebar:hover {
+  width: 150px;
 }
 
 #link {
@@ -35,19 +52,14 @@ ul {
   color: rgb(50, 45, 50);
 }
 
-ul:hover {
-  width: 150px;
-}
-
-li {
+li.Sidebar {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
   padding-bottom: 20px;
 }
-
-li:hover {
+li.Sidebar:hover {
   background-color: #555;
   color: white;
 }

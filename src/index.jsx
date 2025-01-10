@@ -1,28 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { useState, useEffect, useRef } from "react";
-import { BrowserRouter, NavLink } from "react-router";
+import { BrowserRouter, NavLink, Routes, Route } from "react-router";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Home from './Home';
+import Home from './Home/Home';
+import Profile from './Profile/Profile';
+import BrowseGroups from './BrowseGroups/BrowseGroups';
 
 function Sidebar() {
   const [open, setOpen] = useState(true);
   //If you have any unread messages, they show up in here? In that case, we'd append those chats here.
   var Menus = [
-    { title: "Profile", path: "profile", gap: true },
-    { title: "Home", path: "home" },
-    { title: "Browse Groups", path: "browse-groups" },
+    { title: "Profile", path: "/profile", gap: true },
+    { title: "Home", path: "/" },
+    { title: "Browse Groups", path: "/browse-groups" },
   ];
   // <img src={"/the folder/${Menu.title}.file format of the image"} />
   // name image file accordingly
   return (
-    <ul>
-      {Menus.map((Menu) => (<li>
-          <img />
+    <ul class="Sidebar">
+      {Menus.map((Menu) => (<>
+        <li class="Sidebar">
+          <img src="" />
           <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
-          {Menu.gap? <p style={{"margin-bottom": "30px"}} /> : <></>}
-      </li>))}
+        </li>
+        {Menu.gap? <p style={{"margin-bottom": "30px"}} /> : <></>}
+      </>))}
     </ul>
   );
 }
@@ -31,8 +35,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-        <Sidebar />
-        
+        <div class="column" id="left-column"><Sidebar /></div>
+        <div class="column" id="right-column"><Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/browse-groups" element={<BrowseGroups />} />
+        </Routes></div>
       </BrowserRouter>
   </React.StrictMode>
 );
