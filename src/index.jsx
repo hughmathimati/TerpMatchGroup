@@ -19,14 +19,16 @@ function Sidebar() {
   // <img src={"/the folder/${Menu.title}.file format of the image"} />
   // name image file accordingly
   return (
-    <ul class="Sidebar">
-      {Menus.map((Menu) => (<>
-        <li class="Sidebar">
-          <img src="" />
-          <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
-        </li>
-        {Menu.gap? <p style={{"margin-bottom": "30px"}} /> : <></>}
-      </>))}
+    <ul className="Sidebar">
+      {Menus.map((Menu, index) => (
+        <React.Fragment key={index}>
+          <li className="Sidebar">
+            <img src="" alt="Image"/>
+            <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
+          </li>
+          {Menu.gap? <p style={{marginBottom: "30px"}} /> : null}
+        </React.Fragment>
+      ))}
     </ul>
   );
 }
@@ -35,8 +37,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-        <div class="column" id="left-column"><Sidebar /></div>
-        <div class="column" id="right-column"><Routes>
+        <div className="column" id="left-column"><Sidebar /></div>
+        <div className="column" id="right-column"><Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/profile" element={<Profile />} />
           <Route exact path="/browse-groups" element={<BrowseGroups />} />
