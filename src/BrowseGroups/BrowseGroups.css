@@ -3,14 +3,8 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0px;
 }
-.content {
-    margin-right: 450px;
-    padding: 20px;
-    border: 1px solid green;
-}
 .header {
     font-size: 48px;
-    margin-top: 20px;
     margin-bottom: 20px;
     color:#000000;
 }
@@ -44,8 +38,9 @@ body {
     border: 1px solid #000000;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: none;
     row-gap: 50px;
     column-gap: 20px;
 }
