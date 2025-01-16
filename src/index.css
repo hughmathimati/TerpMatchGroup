@@ -12,18 +12,29 @@ code {
     monospace;
 }
 
-.column {
-  float: left;
+.container {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
 }
+
+.column {
+  flex: 1;
+  border: 1px solid blue;
+  padding: 0px;
+  margin: 0px;
+}
+
 #left-column {
   width: 50px;
   position: relative;
   z-index: 2;
 }
+
 #right-column {
   position: relative;
   z-index: 1;
-  padding-left: 35px;
+  padding-left: 0px;
 }
 
 ul.Sidebar {
@@ -43,6 +54,7 @@ ul.Sidebar {
   font-size: 14px;
   font-weight: 600;
 }
+
 ul.Sidebar:hover {
   width: 150px;
 }
@@ -59,6 +71,7 @@ li.Sidebar {
   text-decoration: none;
   padding-bottom: 20px;
 }
+
 li.Sidebar:hover {
   background-color: #555;
   color: white;

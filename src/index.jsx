@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { useState, useEffect, useRef } from "react";
-import { BrowserRouter, NavLink, Routes, Route } from "react-router";
+import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './Home/Home';
@@ -9,24 +8,26 @@ import Profile from './Profile/Profile';
 import BrowseGroups from './BrowseGroups/BrowseGroups';
 
 function Sidebar() {
-  const [open, setOpen] = useState(true);
+  // const [open, setOpen] = useState(true);
   //If you have any unread messages, they show up in here? In that case, we'd append those chats here.
-  var Menus = [
-    { title: "Profile", path: "/profile", gap: true },
-    { title: "Home", path: "/" },
-    { title: "Browse Groups", path: "/browse-groups" },
+  const Menus = [
+    { title: 'Profile', path: '/profile', gap: true },
+    { title: 'Home', path: '/' },
+    { title: 'Browse Groups', path: '/browse-groups' },
   ];
   // <img src={"/the folder/${Menu.title}.file format of the image"} />
   // name image file accordingly
   return (
-    <ul class="Sidebar">
-      {Menus.map((Menu) => (<>
-        <li class="Sidebar">
-          <img src="" />
-          <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
-        </li>
-        {Menu.gap? <p style={{"margin-bottom": "30px"}} /> : <></>}
-      </>))}
+    <ul className="Sidebar">
+      {Menus.map((Menu, index) => (
+        <React.Fragment key={index}>
+          <li className="Sidebar">
+            <img src={"/other-icons/${Menu.title.toLowerCase()}.png"} />
+            <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
+          </li>
+          {Menu.gap ? <p style={{ marginBottom: '30px' }} /> : null}
+        </React.Fragment>
+      ))}
     </ul>
   );
 }
@@ -34,14 +35,18 @@ function Sidebar() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
-        <div class="column" id="left-column"><Sidebar /></div>
-        <div class="column" id="right-column"><Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/profile" element={<Profile />} />
-          <Route exact path="/browse-groups" element={<BrowseGroups />} />
-        </Routes></div>
-      </BrowserRouter>
+    <BrowserRouter>
+      <div className="container">
+        <div className="column" id="left-column"><Sidebar /></div>
+        <div className="column" id="right-column">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/browse-groups" element={<BrowseGroups />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
