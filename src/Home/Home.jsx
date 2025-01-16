@@ -18,8 +18,20 @@ export default function Home() {
     <div className="circle"></div>
     <div className="circle"></div>
     <div className="circle"></div>
+  </div>
 
+    <h2>Matches→</h2>
 
+    <div className="matchList">
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
+      <div className="square"></div>
     </div>
 
 

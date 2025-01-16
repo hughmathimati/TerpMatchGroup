@@ -2,10 +2,23 @@
     width: 50px;
     height: 50px;
     border-radius: 50%; 
-    background-color: clear; 
+    background-color: grey; 
   }
 
-  .classList {
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: grey; 
+}
+
+.matchList {
+    display: flex;             
+    justify-content: flex-start; 
+    align-items: center;      
+    gap: 10px;                
+  }
+
+.classList {
     display: flex;             
     justify-content: flex-start; 
     align-items: center;      
