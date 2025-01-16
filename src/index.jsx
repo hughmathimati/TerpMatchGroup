@@ -22,7 +22,7 @@ function Sidebar() {
       {Menus.map((Menu, index) => (
         <React.Fragment key={index}>
           <li className="Sidebar">
-            <img src="" alt="Image" />
+            <img src={"/other-icons/${Menu.title.toLowerCase()}.png"} />
             <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
           </li>
           {Menu.gap ? <p style={{ marginBottom: '30px' }} /> : null}
