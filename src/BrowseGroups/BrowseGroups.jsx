@@ -23,7 +23,7 @@ export default function BrowseGroups() {
     <div className="content">
       <div className="header">Browse Groups</div>
       <div className="labels-row">
-        {Array.from({ length: 9 }).map((_, index) => (
+        {Array.from({ length: 14 }).map((_, index) => (
           <div
             key={index}
             className={`label ${activeLabels.includes(index) ? 'active' : ''}`}
@@ -35,7 +35,7 @@ export default function BrowseGroups() {
         ))}
       </div>
       <div className="grid">
-        {Array.from({ length: 15 }).map((_, index) => (
+        {Array.from({ length: 21 }).map((_, index) => (
           <div key={index} className="container">
             <div className="item"></div>
             <div className="title">Title</div>
