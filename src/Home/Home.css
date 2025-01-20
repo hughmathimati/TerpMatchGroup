@@ -10,7 +10,7 @@ body {
   height: 50px;
   border-radius: 50%; 
   background-color: lightgray !important; 
-  }
+}
 
 .label {
   margin-top: 10px;
@@ -29,6 +29,7 @@ body {
   width: 50px;
   height: 50px;
   background-color: lightgray !important; 
+  border-radius: 10px;
 }
 
 .matchList {
@@ -38,9 +39,23 @@ body {
   gap: 10px;            
   }
 
-  .classList{
+ .classList{
     display: flex;             
     justify-content: flex-start; 
     align-items: center;      
     gap: 10px; 
+}
+  
+  header {
+    background-color: #f7fda6;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .circles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
   }

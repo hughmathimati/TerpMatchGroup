@@ -4,16 +4,19 @@ import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './Home/Home';
-import Profile from './Profile/Profile';
+import Account from './Account/Account';
 import BrowseGroups from './BrowseGroups/BrowseGroups';
+import BrowseGroupsIcon from './Browse Groups.png';
+import HomeIcon from './Home.png';
+import AccountIcon from './Account.png';
 
 function Sidebar() {
   // const [open, setOpen] = useState(true);
   //If you have any unread messages, they show up in here? In that case, we'd append those chats here.
   const Menus = [
-    { title: 'Profile', path: '/profile', gap: true },
-    { title: 'Home', path: '/' },
-    { title: 'Browse Groups', path: '/browse-groups' },
+    { title: 'Account', path: '/account', src: AccountIcon, gap: true },
+    { title: 'Home', path: '/', src: HomeIcon},
+    { title: 'Browse Groups', path: '/browse-groups', src: BrowseGroupsIcon },
   ];
   // <img src={"/the folder/${Menu.title}.file format of the image"} />
   // name image file accordingly
@@ -21,10 +24,12 @@ function Sidebar() {
     <ul className="Sidebar">
       {Menus.map((Menu, index) => (
         <React.Fragment key={index}>
-          <li className="Sidebar">
-            <img src={"/other-icons/${Menu.title.toLowerCase()}.png"} />
-            <NavLink to={Menu.path} id="link">{Menu.title}</NavLink>
-          </li>
+          <NavLink to={Menu.path} id="link">
+            <li className="Sidebar">
+              <img src={Menu.src} width="40px" class="sidebar-icons" />
+              <span id="link-text">&nbsp;&nbsp;{Menu.title}</span>
+            </li>
+          </NavLink>
           {Menu.gap ? <p style={{ marginBottom: '30px' }} /> : null}
         </React.Fragment>
       ))}
@@ -41,7 +46,7 @@ root.render(
         <div className="column" id="right-column">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/account" element={<Account />} />
             <Route exact path="/browse-groups" element={<BrowseGroups />} />
           </Routes>
         </div>
