@@ -5,7 +5,9 @@ body {
 }
 .header {
     font-size: 48px;
+    font-weight: bold;
     margin-bottom: 20px;
+    margin-top: 40px;
     color:#000000;
 }
 .label {
@@ -41,7 +43,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: none;
-    row-gap: 50px;
+    row-gap: 0px;
     column-gap: 20px;
 }
 .grid .container {
@@ -49,17 +51,17 @@ body {
     flex-direction: column;
     align-items: left;
     width: 150px;
-    height: auto;
+    height: 200px;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #FFFACD;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .grid .container .item {
     background-color: #F3EDF7;
     width: 150px;;
-    height: 90px;
+    height: 100px;
     border-radius: 20px;
     border: 1px solid #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

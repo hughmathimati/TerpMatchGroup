@@ -35,7 +35,7 @@ export default function BrowseGroups() {
         ))}
       </div>
       <div className="grid">
-        {Array.from({ length: 15 }).map((_, index) => (
+        {Array.from({ length: 21 }).map((_, index) => (
           <div key={index} className="container">
             <div className="item"></div>
             <div className="title">Title</div>
