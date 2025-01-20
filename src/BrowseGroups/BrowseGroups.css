@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     transition: background color 0.3s ease, padding-left 0.3s ease;
+    transition-duration: 100ms;
     background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #000000;
