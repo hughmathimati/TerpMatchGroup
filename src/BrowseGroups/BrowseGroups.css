@@ -1,5 +1,5 @@
 body {
-    background-color: #FEF7FF; /* Light yellow pastel */
+    background-color: #FEF7FF;
     font-family: Roboto, sans-serif;
     margin: 0px;
 }
@@ -16,15 +16,18 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: padding-left 0.3s ease;
+    transition: background color 0.3s ease, padding-left 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #000000;
 }
 .label .icon {
     position: static;
     left: 0px;
     display: none;
 }
-.label.active .icon {
-    display: inline-block;
+.labels-row .label.active {
+    background-color: #ff9aba;
 }
 .labels-row {
     display: flex;
