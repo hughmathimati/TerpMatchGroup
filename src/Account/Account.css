@@ -26,3 +26,13 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+select {
+  width: 580px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+option {
+  padding: 5px;
+}
