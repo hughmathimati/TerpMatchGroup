@@ -10,7 +10,7 @@ body {
     margin-top: 40px;
     color:#000000;
 }
-.label {
+.BrowseGroups .label {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
@@ -44,6 +44,7 @@ body {
     border-radius: 8px;
     border: 1px solid #000000;
     white-space: nowrap;
+    transition-duration: 100ms;
 }
 .grid {
     display: flex;
