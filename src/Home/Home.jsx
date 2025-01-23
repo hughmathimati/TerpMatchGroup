@@ -4,8 +4,9 @@ import './Home.css';
 
 export default function Home() {
   return (<>
+    <div className="page-frame">
     <h1>Home</h1>
-    <h2>Your Profile () </h2>
+    <h2>Your Profile</h2>
     <h2>Current Classes →</h2>
     <div className="classList">  
       <div className="circles">
@@ -26,6 +27,8 @@ export default function Home() {
           <span className="label">Class</span>
         </div>
       ))}
+      
     </div>
+  </div>
   </>);
 }
