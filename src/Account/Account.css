@@ -6,23 +6,33 @@
     border-radius: 8px;
     background-color: #F3EDF7;
   }
-  h1 {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .form-group {
-    margin-bottom: 15px;
-  }
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  input {
-    width: 580px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input {
+  width: 580px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+select {
+  width: 580px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+option {
+  padding: 5px;
+}

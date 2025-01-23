@@ -19,6 +19,13 @@ export default function BrowseGroups() {
     });
   };
 
+  const groups = Array.from({ length: 21 }).map((_, index) => ({
+    id: index + 1,
+    image: ``,
+    title: `Group ${index + 1}`,
+    description: `This is study group ${index + 1}`,
+  }));
+
   return (
     <div className="content">
       <div className="header">Browse Groups</div>
@@ -35,13 +42,20 @@ export default function BrowseGroups() {
         ))}
       </div>
       <div className="grid">
-        {Array.from({ length: 21 }).map((_, index) => (
+        {/* {Array.from({ length: 21 }).map((_, index) => (
           <div key={index} className="container">
             <div className="item"></div>
             <div className="title">Title</div>
             <div className="description">Body</div>
           </div>
-        ))}
+        ))} */}
+      {groups.map((group) => (
+        <div key={group.id} className="container">
+          <img src={group.image} alt={group.title} className="item" />
+          <div className="title">{group.title}</div>
+          <div className="description">{group.description}</div>
+        </div>
+      ))}
       </div>
     </div>
   );
