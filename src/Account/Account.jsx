@@ -1,14 +1,19 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Select from 'react-select';
 import './Account.css';
 
 const Account = () => {
-  const [majorMinor, setMajorMinor] = useState([]);
-  const [interests, setInterests] = useState([]);
-  const [courses, setCourses] = useState([]);
-  const [groupSize, setGroupSize] = useState([]);
-  const [studyTime, setStudyTime] = useState([]);
+  const [majorMinor, setMajorMinor] = useState(() => JSON.parse(localStorage.getItem('majorMinor')) || []);
+  const [interests, setInterests] = useState(() => JSON.parse(localStorage.getItem('interests')) || []);
+  const [courses, setCourses] = useState(() => JSON.parse(localStorage.getItem('courses')) || []);
+  const [groupSize, setGroupSize] = useState(() => JSON.parse(localStorage.getItem('groupSize')) || []);
+  const [studyTime, setStudyTime] = useState(() => JSON.parse(localStorage.getItem('studyTime')) || []);
+  const [email, setEmail] = useState(() => localStorage.getItem('email') || '');
+  const [password, setPassword] = useState(() => localStorage.getItem('password') || '');
+  const [notifications, setNotifications] = useState(() => localStorage.getItem('notifications') || 'all');
+  const [language, setLanguage] = useState(() => localStorage.getItem('language') || 'english');
+  const [privacy, setPrivacy] = useState(() => localStorage.getItem('privacy') || 'public');
 
   const majors = [
     { value: 'Computer Science', label: 'Computer Science' },
@@ -56,6 +61,46 @@ const Account = () => {
     { value: '9pm-12am', label: '9pm-12am' },
     { value: '12am<', label: '12am<' }
   ];
+
+  useEffect(() => {
+    localStorage.setItem('majorMinor', JSON.stringify(majorMinor));
+  }, [majorMinor]);
+
+  useEffect(() => {
+    localStorage.setItem('interests', JSON.stringify(interests));
+  }, [interests]);
+
+  useEffect(() => {
+    localStorage.setItem('courses', JSON.stringify(courses));
+  }, [courses]);
+
+  useEffect(() => {
+    localStorage.setItem('groupSize', JSON.stringify(groupSize));
+  }, [groupSize]);
+
+  useEffect(() => {
+    localStorage.setItem('studyTime', JSON.stringify(studyTime));
+  }, [studyTime]);
+
+  useEffect(() => {
+    localStorage.setItem('email', email);
+  }, [email]);
+
+  useEffect(() => {
+    localStorage.setItem('password', password);
+  }, [password]);
+
+  useEffect(() => {
+    localStorage.setItem('notifications', notifications);
+  }, [notifications]);
+
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
+
+  useEffect(() => {
+    localStorage.setItem('privacy', privacy);
+  }, [privacy]);
 
   // const majors = ['Computer Science', 'Mathematics', 'Physics', 'Biology', 'English', 'History'];
   // const hobbies = ['Reading', 'Gaming', 'Hiking', 'Cooking', 'Gym', 'Dance'];
@@ -156,9 +201,9 @@ const Account = () => {
             <Select
               id="studyTime"
               isMulti
-              options={sizes}
-              value={groupSize}
-              onChange={setGroupSize}
+              options={times}
+              value={studyTime}
+              onChange={setStudyTime}
               // {/* multiple
               // value={studyTime}
               // onChange={(e) => handleSelectChange(e, setStudyTime)}
@@ -172,19 +217,35 @@ const Account = () => {
         </form>
       </div>
       <div className="settings-container">
-        <h1>Settings</h1>
+        <h3>Settings</h3>
         <form>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter new password" />
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter new password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              />
           </div>
           <div className="form-group">
             <label htmlFor="notifications">Notifications:</label>
-            <select id="notifications">
+            <select
+              id="notifications"
+              value={notifications}
+              onChange={(e) => setNotifications(e.target.value)}
+            >
               <option value="all">All Notifications</option>
               <option value="email">Email Only</option>
               <option value="none">None</option>
@@ -192,7 +253,11 @@ const Account = () => {
           </div>
           <div className="form-group">
             <label htmlFor="language">Language:</label>
-            <select id="language">
+            <select
+              id="language"
+              value={language}
+              onChange={(e) => setLanguage(e.target.value)}
+            >
               <option value="english">English</option>
               <option value="spanish">Spanish</option>
               <option value="french">French</option>
@@ -202,7 +267,11 @@ const Account = () => {
           </div>
           <div className="form-group">
             <label htmlFor="privacy">Privacy Settings:</label>
-            <select id="privacy">
+            <select
+              id="privacy"
+              value={privacy}
+              onChange={(e) => setPrivacy(e.target.value)}
+            >
               <option value="public">Public</option>
               <option value="private">Private</option>
             </select>
