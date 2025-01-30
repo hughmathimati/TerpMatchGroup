@@ -38,7 +38,7 @@ const course_Names = [
 const class_names = [
   'English',
   'History',
-  'Programming',
+  'Coding',
   'Math',
   'Music',
   'Science'
