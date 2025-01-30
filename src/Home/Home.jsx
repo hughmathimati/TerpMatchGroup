@@ -38,7 +38,7 @@ const course_Names = [
 const class_names = [
   'English',
   'History',
-  'Language',
+  'Programming',
   'Math',
   'Music',
   'Science'
@@ -56,7 +56,7 @@ const match_names = [
 const class_image = [
   'src/classImages/english.png',
   'src/classImages/history.png',
-  'src/classImages/language.png',
+  'src/classImages/programming.png',
   'src/classImages/math.png',
   'src/classImages/music.png',
   'src/classImages/science.png'
@@ -77,15 +77,15 @@ export default function Home() {
   <div className="header">Home</div>
     <div className="subtitle">Your Profile</div>
 
-
     <div className="title">Current Classes →</div>
     <div className="grid">
   {[...Array(6)].map((_, index) => (
     <div key={index} className="circle">
       <img src={class_image[index]} id="home-image" alt={`Class ${index + 1}`} />
+      <div className="match-info">
+        </div>
       {class_names[index]}
-      <h4>Class {index + 1}</h4> 
-    </div>
+    </div> 
   ))}
 </div>
 
@@ -94,10 +94,10 @@ export default function Home() {
   {[...Array(6)].map((_, index) => (
     <div key={index} className="square">
       <img src={match_image[index]} id="home-image" alt={`Match ${index + 1}`} />
-      {match_names[index]}
+      {/* {match_names[index]} */}
       <div className="match-info">
-      <h4>Match {index + 1} </h4> 
       </div>
+      {match_names[index]}
     </div>
   ))}
 </div>
