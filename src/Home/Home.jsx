@@ -28,6 +28,9 @@ const courses = [
 //use same format as above
 const current_classes = [];
 const matches = [];
+const class_picture = [];
+const match_picture = [];
+
 export default function Home() {
   return (<>
 
@@ -43,18 +46,6 @@ export default function Home() {
   ))}
 </div>
 
-
-
-    {/* <div className="classList">  
-      <div className="circles">
-        {[...Array(7)].map((_, index) => (
-          <div className="circleText">
-            <div className="circle"></div>
-            <span className="label">Class</span>
-          </div>
-        ))}
-      </div>
-    </div> */}
 
     <div className="title">Matches→</div>
     <div className="grid">
