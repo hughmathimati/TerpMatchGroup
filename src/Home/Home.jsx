@@ -82,7 +82,7 @@ export default function Home() {
     <div className="grid">
   {[...Array(6)].map((_, index) => (
     <div key={index} className="circle">
-      <img src={class_image[index]} alt={`Class ${index + 1}`} />
+      <img src={class_image[index]} id="home-image" alt={`Class ${index + 1}`} />
       {class_names[index]}
       <h4>Class {index + 1}</h4> 
     </div>
@@ -93,7 +93,7 @@ export default function Home() {
 <div className="grid">
   {[...Array(6)].map((_, index) => (
     <div key={index} className="square">
-      <img src={match_image[index]} alt={`Match ${index + 1}`} />
+      <img src={match_image[index]} id="home-image" alt={`Match ${index + 1}`} />
       {match_names[index]}
       <div className="match-info">
       <h4>Match {index + 1} </h4> 
