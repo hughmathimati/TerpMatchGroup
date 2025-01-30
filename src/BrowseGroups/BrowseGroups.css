@@ -10,6 +10,7 @@ body {
     margin-top: 40px;
     color:#000000;
 }
+.label {
 .BrowseGroups .label {
     position: relative;
     padding-left: 25px;
@@ -44,6 +45,10 @@ body {
     border-radius: 8px;
     border: 1px solid #000000;
     white-space: nowrap;
+}
+.label-dropdown {
+    margin-right: 12px;
+    width: 250px;
     transition-duration: 100ms;
 }
 .grid {

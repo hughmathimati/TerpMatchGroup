@@ -1,10 +1,26 @@
+.account-page {
+  display: flex;
+  justify-content: space-between;
+}
 .account-container {
-    width: 600px;
+    width: 580px;
+    height: 550px;
     margin: 0 auto;
+    margin-right: 40px;
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 8px;
     background-color: #F3EDF7;
+  }
+  .settings-container {
+    width: 580px;
+    height: 550px;
+    margin: 0 auto;
+    margin-right: 40px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: rgb(230, 220, 230);
   }
 h1 {
   font-size: 48px;
@@ -12,8 +28,14 @@ h1 {
   text-align: left;
   margin-bottom: 20px;
 }
+h3 {
+  font-size: 48px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 20px;
+}
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 label {
   display: block;
@@ -21,18 +43,19 @@ label {
   font-weight: bold;
 }
 input {
-  width: 580px;
-  padding: 8px;
+  width: 560px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 0px;
 }
 select {
-  width: 580px;
-  padding: 8px;
+  width: 578px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 option {
-  padding: 5px;
+  padding: 20px;
 }
