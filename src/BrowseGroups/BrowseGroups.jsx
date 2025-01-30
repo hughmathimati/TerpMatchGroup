@@ -119,326 +119,196 @@ export default function BrowseGroups() {
     },
     {
       id: 7,
-      image: 'path/to/image2.jpg',
-      title: 'Group 7',
-      description: 'This is study group 2',
+      image: 'path/to/image7.jpg',
+      title: 'Chemistry Enthusiasts',
+      description: 'Join us to explore the wonders of chemistry!',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: '',
+        hobby: '',
+        class: '',
+        size: '3-5',
+        time: '3pm-6pm'
       }
     },
     {
       id: 8,
-      image: 'path/to/image2.jpg',
-      title: 'Group 8',
-      description: 'This is study group 2',
+      image: 'path/to/image8.jpg',
+      title: 'History Buffs',
+      description: 'Dive into historical discussions and debates.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: 'History',
+        hobby: 'Reading',
+        class: '',
+        size: '15+',
+        time: '6pm-9pm'
       }
     },
     {
       id: 9,
-      image: 'path/to/image2.jpg',
-      title: 'Group 9',
-      description: 'This is study group 2',
+      image: 'path/to/image9.jpg',
+      title: 'Bio Besties',
+      description: 'Learn Biology! Make friends!',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
+        major: 'Biology',
+        hobby: '',
+        class: '',
+        size: '15+',
         time: '9am-12pm'
       }
     },
     {
       id: 10,
-      image: 'path/to/image2.jpg',
-      title: 'Group 10',
-      description: 'This is study group 2',
+      image: 'path/to/image10.jpg',
+      title: 'The Thinkers',
+      description: 'Engage in deep philosophical discussions. We stan Nietzche<3',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: 'Philosophy',
+        hobby: '',
+        class: '',
+        size: '13-15',
+        time: '12pm-3pm'
       }
     },
     {
       id: 11,
-      image: 'path/to/image2.jpg',
-      title: 'Group 11',
-      description: 'This is study group 2',
+      image: 'path/to/image11.jpg',
+      title: 'Art Lovers',
+      description: 'Explore your creativity with fellow art enthusiasts.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: 'Art',
+        hobby: '',
+        class: '',
+        size: '3-5',
+        time: '3pm-6pm'
       }
     },
     {
       id: 12,
-      image: 'path/to/image2.jpg',
-      title: 'Group 12',
-      description: 'This is study group 2',
+      image: 'path/to/image12.jpg',
+      title: 'Music Makers',
+      description: 'Jam and create music together!',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: 'Music',
+        hobby: '',
+        class: '',
+        size: '',
+        time: '6pm-9pm'
       }
     },
     {
       id: 13,
-      image: 'path/to/image2.jpg',
-      title: 'Group 13',
-      description: 'This is study group 2',
+      image: 'path/to/image13.jpg',
+      title: 'Literature Circle',
+      description: 'Discuss and analyze literature.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
+        major: 'English',
+        hobby: 'Reading',
+        class: '',
+        size: '3-5',
         time: '9am-12pm'
       }
     },
     {
       id: 14,
-      image: 'path/to/image2.jpg',
-      title: 'Group 14',
-      description: 'This is study group 2',
+      image: 'path/to/image14.jpg',
+      title: 'Economics Enthusiasts',
+      description: 'Dive into economic theories and discussions.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
+        major: 'Economics',
+        hobby: '',
+        class: '',
         size: '6-9',
-        time: '9am-12pm'
+        time: '12pm-3pm'
       }
     },
     {
       id: 15,
-      image: 'path/to/image2.jpg',
-      title: 'Group 15',
-      description: 'This is study group 2',
+      image: 'path/to/image15.jpg',
+      title: 'Political Science Group',
+      description: 'Discuss political theories and current events.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: '',
+        hobby: '',
+        class: '',
+        size: '3-5',
+        time: '3pm-6pm'
       }
     },
     {
       id: 16,
-      image: 'path/to/image2.jpg',
-      title: 'Group 16',
-      description: 'This is study group 2',
+      image: 'path/to/image16.jpg',
+      title: 'Sociology Society',
+      description: 'Explore sociological concepts and theories.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
+        major: '',
+        hobby: 'Research',
+        class: '',
         size: '6-9',
-        time: '9am-12pm'
+        time: '6pm-9pm'
       }
     },
     {
       id: 17,
-      image: 'path/to/image2.jpg',
-      title: 'Group 17',
-      description: 'This is study group 2',
+      image: 'path/to/image17.jpg',
+      title: 'Psychology Pals',
+      description: 'Discuss psychological theories and case studies.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
+        major: '',
+        hobby: 'Reading',
+        class: 'PSYC100',
+        size: '15+',
         time: '9am-12pm'
       }
     },
     {
       id: 18,
-      image: 'path/to/image2.jpg',
-      title: 'Group 18',
-      description: 'This is study group 2',
+      image: 'path/to/image18.jpg',
+      title: 'MechE Innovators',
+      description: 'Collaborate on engineering projects and ideas.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
+        major: 'Mechanical Engineering',
+        hobby: 'Building',
+        class: 'ENES100',
         size: '6-9',
-        time: '9am-12pm'
+        time: '12pm-3pm'
       }
     },
     {
       id: 19,
-      image: 'path/to/image2.jpg',
-      title: 'Group 19',
-      description: 'This is study group 2',
+      image: 'path/to/image19.jpg',
+      title: 'Business Minds',
+      description: 'Discuss business strategies and case studies.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
+        major: 'Business',
+        hobby: '',
+        class: '',
+        size: '10-12',
+        time: '3pm-6pm'
       }
     },
     {
       id: 20,
-      image: 'path/to/image2.jpg',
-      title: 'Group 20',
-      description: 'This is study group 2',
+      image: 'path/to/image20.jpg',
+      title: 'Environmentalists',
+      description: 'Explore environmental science and sustainability.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
+        major: 'Environmental Science',
+        hobby: 'Nature',
+        class: '',
         size: '6-9',
-        time: '9am-12pm'
+        time: '6pm-9pm'
       }
     },
     {
       id: 21,
-      image: 'path/to/image2.jpg',
-      title: 'Group 21',
-      description: 'This is study group 2',
+      image: 'path/to/image21.jpg',
+      title: 'Anthropology Study Group',
+      description: 'Discuss anthropological theories.',
       labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 22,
-      image: 'path/to/image2.jpg',
-      title: 'Group 22',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 23,
-      image: 'path/to/image2.jpg',
-      title: 'Group 23',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 24,
-      image: 'path/to/image2.jpg',
-      title: 'Group 24',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 25,
-      image: 'path/to/image2.jpg',
-      title: 'Group 25',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 26,
-      image: 'path/to/image2.jpg',
-      title: 'Group 26',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 27,
-      image: 'path/to/image2.jpg',
-      title: 'Group 27',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 28,
-      image: 'path/to/image2.jpg',
-      title: 'Group 28',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 29,
-      image: 'path/to/image2.jpg',
-      title: 'Group 29',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 30,
-      image: 'path/to/image2.jpg',
-      title: 'Group 30',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
-        time: '9am-12pm'
-      }
-    },
-    {
-      id: 31,
-      image: 'path/to/image31.jpg',
-      title: 'Group 31',
-      description: 'This is study group 2',
-      labels: {
-        major: 'Mathematics',
-        hobby: 'Gaming',
-        class: 'CMSC132',
-        size: '6-9',
+        major: '',
+        hobby: 'Research',
+        class: '',
+        size: '3-5',
         time: '9am-12pm'
       }
     },
@@ -451,7 +321,16 @@ export default function BrowseGroups() {
     { value: 'Physics', label: 'Physics' },
     { value: 'Biology', label: 'Biology' },
     { value: 'English', label: 'English' },
-    { value: 'History', label: 'History' }
+    { value: 'History', label: 'History' },
+    { value: 'Art', label: 'Art' },
+    { value: 'Mechanical Engineering', label: 'Mechanical Engineering' },
+    { value: 'Philosophy', label: 'Philosophy' },
+    { value: 'Business', label: 'Business' },
+    { value: 'Economics', label: 'Economics' },
+    { value: 'Environmental Science', label: 'Environmental Science' },
+    { value: 'Chemistry', label: 'Chemistry' },
+    { value: 'Theatre', label: 'Theatre' },
+    { value: 'Music', label: 'Music' }
   ];
 
   const hobbies = [
@@ -460,7 +339,10 @@ export default function BrowseGroups() {
     { value: 'Hiking', label: 'Hiking' },
     { value: 'Cooking', label: 'Cooking' },
     { value: 'Gym', label: 'Gym' },
-    { value: 'Dance', label: 'Dance' }
+    { value: 'Dance', label: 'Dance' },
+    { value: 'Nature', label: 'Nature' },
+    { value: 'Building', label: 'Building' },
+    { value: 'Research', label: 'Research' }
   ];
 
   const classes = [
