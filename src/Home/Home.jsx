@@ -28,8 +28,24 @@ const courses = [
 //use same format as above
 const current_classes = [];
 const matches = [];
-const class_picture = [];
-const match_picture = [];
+
+const class_image = [
+  'src/classImages/english.png',
+  'src/classImages/history.png',
+  'src/classImages/language.png',
+  'src/classImages/math.png',
+  'src/classImages/music.png',
+  'src/classImages/science.png'
+];
+
+const match_image = [
+'src/matchImages/doctorStudent.png',
+'src/matchImages/gymnast.png',
+'src/matchImages/reader.png',
+'src/matchImages/regularStudent.png',
+'src/matchImages/soccerPlayer.png',
+'src/matchImages/doctorStudent.png',
+];
 
 export default function Home() {
   return (<>
