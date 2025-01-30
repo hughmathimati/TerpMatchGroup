@@ -30,11 +30,22 @@ const current_classes = [];
 const matches = [];
 export default function Home() {
   return (<>
-    <div className="page-frame">
-    <h1>Home</h1>
-    <h2>Your Profile</h2>
-    <h2>Current Classes →</h2>
-    <div className="classList">  
+
+  <div className="header">Home</div>
+    <div className="subtitle">Your Profile</div>
+    <div className="title">Current Classes →</div>
+
+    <div className="grid">
+  {[...Array(6)].map((_, index) => (
+    <div key={index} className="circle">
+      Class {index + 1}
+    </div>
+  ))}
+</div>
+
+
+
+    {/* <div className="classList">  
       <div className="circles">
         {[...Array(7)].map((_, index) => (
           <div className="circleText">
@@ -43,18 +54,18 @@ export default function Home() {
           </div>
         ))}
       </div>
-    </div>
+    </div> */}
 
-    <h2>Matches→</h2>
-    <div className="matchList">
-      {[...Array(7)].map((_, index) => (
-        <div className="squareText">
-          <div className="square"></div>
-          <span className="label">Class</span>
-        </div>
-      ))}
-      
+    <div className="title">Matches→</div>
+    <div className="grid">
+  {[...Array(6)].map((_, index) => (
+    <div key={index} className="square">
+      Match {index + 1}
     </div>
-  </div>
+  ))}
+</div>
+
+
+
   </>);
 }
