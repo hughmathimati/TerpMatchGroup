@@ -10,7 +10,8 @@ body {
     margin-top: 40px;
     color:#000000;
 }
-/* .label {
+.label {
+.BrowseGroups .label {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
@@ -29,14 +30,14 @@ body {
 }
 .labels-row .label.active {
     background-color: #ff9aba;
-} */
+}
 .labels-row {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
     margin-bottom: 20px;
 }
-/* .labels-row .label {
+.labels-row .label {
     padding: 3px;
     padding-right: 15px;
     padding-left: 15px;
@@ -44,10 +45,11 @@ body {
     border-radius: 8px;
     border: 1px solid #000000;
     white-space: nowrap;
-} */
+}
 .label-dropdown {
     margin-right: 12px;
     width: 250px;
+    transition-duration: 100ms;
 }
 .grid {
     display: flex;

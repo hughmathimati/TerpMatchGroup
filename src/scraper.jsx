@@ -1,7 +1,7 @@
 //npm install axios cheerio
 //TODO: Debug this with breakpoints
-import * as cheerio from cheerio;
-import * as axios from axios;
+const axios = require("axios");
+const cheerio = require("cheerio");
 
 const url = "https://app.testudo.umd.edu/soc";
 function getTerm(name) {
