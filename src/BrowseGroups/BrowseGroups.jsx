@@ -156,7 +156,7 @@ export default function BrowseGroups() {
     },
     {
       id: 8,
-      image: 'path/to/image8.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/historyBuffs.png',
       title: 'History Buffs',
       description: 'Dive into historical discussions and debates.',
       labels: {
@@ -169,7 +169,7 @@ export default function BrowseGroups() {
     },
     {
       id: 9,
-      image: 'path/to/image9.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/biology.png',
       title: 'Bio Besties',
       description: 'Learn Biology! Make friends!',
       labels: {
@@ -182,7 +182,7 @@ export default function BrowseGroups() {
     },
     {
       id: 10,
-      image: 'path/to/image10.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/philosophy.png',
       title: 'The Thinkers',
       description: 'Engage in deep philosophical discussions. We stan Nietzche<3',
       labels: {
@@ -195,7 +195,7 @@ export default function BrowseGroups() {
     },
     {
       id: 11,
-      image: 'path/to/image11.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/art.png',
       title: 'Art Lovers',
       description: 'Explore your creativity with fellow art enthusiasts.',
       labels: {
@@ -208,7 +208,7 @@ export default function BrowseGroups() {
     },
     {
       id: 12,
-      image: 'path/to/image12.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/music.png',
       title: 'Music Makers',
       description: 'Jam and create music together!',
       labels: {
@@ -221,7 +221,7 @@ export default function BrowseGroups() {
     },
     {
       id: 13,
-      image: 'path/to/image13.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/literature.png',
       title: 'Literature Circle',
       description: 'Discuss and analyze literature.',
       labels: {
@@ -234,7 +234,7 @@ export default function BrowseGroups() {
     },
     {
       id: 14,
-      image: 'path/to/image14.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/economics.png',
       title: 'Economics Enthusiasts',
       description: 'Dive into economic theories and discussions.',
       labels: {
