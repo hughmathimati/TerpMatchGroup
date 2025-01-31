@@ -451,33 +451,7 @@ export default function BrowseGroups() {
           onChange={(selectedOptions) => handleFilterChange(selectedOptions, setSelectedTimes)}
         />
       </div>
-      {/* <div className="labels-row">
-        {Array.from({ length: 14 }).map((_, index) => (
-          <div
-            key={index}
-            className={`label ${activeLabels.includes(index) ? 'active' : ''}`}
-            onClick={() => handleLabelClick(index)}
-          >
-            <span className="icon">★</span>
-            Label {index + 1}
-          </div>
-        ))}
-      </div> */}
       <div className="grid">
-        {/* {Array.from({ length: 21 }).map((_, index) => (
-          <div key={index} className="container">
-            <div className="item"></div>
-            <div className="title">Title</div>
-            <div className="description">Body</div>
-          </div>
-        ))} */}
-      {/* {groups.map((group) => (
-        <div key={group.id} className="container">
-          <img src={group.image} alt={group.title} className="item" />
-          <div className="title">{group.title}</div>
-          <div className="description">{group.description}</div>
-        </div>
-      ))} */}
         {filteredGroups.map((group) => (
           <div key={group.id} className="container">
             <img src={group.image} alt={group.title} className="item" />
