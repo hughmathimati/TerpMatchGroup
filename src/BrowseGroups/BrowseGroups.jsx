@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import Select from 'react-select';
 import './BrowseGroups.css';
+import './BrowseGroups';
 
 const courses = [
   {prefix: "CMSC", id: "CMSC132", title: "Object Oriented Programming II", description: "Introduction to use of computers to solve problems using software engineering principles. Design, build, test, and debug medium -size software systems and learn to use relevant tools. Use object-oriented methods to create effective and efficient problem solutions. Use and implement application programming interfaces (APIs). Programming done in Java."},
@@ -105,7 +106,7 @@ export default function BrowseGroups() {
       id: 4,
       image: 'path/to/image4.jpg',
       title: 'MATH 141',
-      description: 'Study calc ii problems with us and make friends :D',
+      description: 'Study calc II problems with us and make friends :D',
       labels: {
         major: '',
         hobby: '',
@@ -246,7 +247,7 @@ export default function BrowseGroups() {
     },
     {
       id: 15,
-      image: 'path/to/image15.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Political Science.png',
       title: 'Political Science Group',
       description: 'Discuss political theories and current events.',
       labels: {
@@ -259,7 +260,7 @@ export default function BrowseGroups() {
     },
     {
       id: 16,
-      image: 'path/to/image16.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Sociology.png',
       title: 'Sociology Society',
       description: 'Explore sociological concepts and theories.',
       labels: {
@@ -272,7 +273,7 @@ export default function BrowseGroups() {
     },
     {
       id: 17,
-      image: 'path/to/image17.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Psychology.jpeg',
       title: 'Psychology Pals',
       description: 'Discuss psychological theories and case studies.',
       labels: {
@@ -285,7 +286,7 @@ export default function BrowseGroups() {
     },
     {
       id: 18,
-      image: 'path/to/image18.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Mechanical Engineering.png',
       title: 'MechE Innovators',
       description: 'Collaborate on engineering projects and ideas.',
       labels: {
@@ -298,7 +299,7 @@ export default function BrowseGroups() {
     },
     {
       id: 19,
-      image: 'path/to/image19.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Business.jpg',
       title: 'Business Minds',
       description: 'Discuss business strategies and case studies.',
       labels: {
@@ -311,7 +312,7 @@ export default function BrowseGroups() {
     },
     {
       id: 20,
-      image: 'path/to/image20.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Environmental.avif',
       title: 'Environmentalists',
       description: 'Explore environmental science and sustainability.',
       labels: {
@@ -324,7 +325,7 @@ export default function BrowseGroups() {
     },
     {
       id: 21,
-      image: 'path/to/image21.jpg',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Anthropology.webp',
       title: 'Anthropology Study Group',
       description: 'Discuss anthropological theories.',
       labels: {
