@@ -65,7 +65,7 @@ export default function BrowseGroups() {
   const groups = [
     {
       id: 1,
-      image: 'path/to/image1.jpg',
+      image: 'src/groupImages/programmingG.png',
       title: 'CS Warriors',
       description: "We're in Elias Gonzalez's CMSC 132 class, with experience ranging from beginner to experienced.",
       labels: {
@@ -78,7 +78,7 @@ export default function BrowseGroups() {
     },
     {
       id: 2,
-      image: 'path/to/image2.jpg',
+      image: 'src/groupImages/mathG.png',
       title: 'MATH 140 Study Group',
       description: 'For all sufferers of MATH 140.',
       labels: {
@@ -91,7 +91,7 @@ export default function BrowseGroups() {
     },
     {
       id: 3,
-      image: 'path/to/image3.jpg',
+      image: 'src/groupImages/englishG.png',
       title: 'Public Speakers',
       description: "Open to all Public Speaking students! A safe space to practice your speeches :)",
       labels: {
@@ -104,7 +104,7 @@ export default function BrowseGroups() {
     },
     {
       id: 4,
-      image: 'path/to/image4.jpg',
+      image: 'src/groupImages/mathG.png',
       title: 'MATH 141',
       description: 'Study calc II problems with us and make friends :D',
       labels: {
@@ -117,7 +117,7 @@ export default function BrowseGroups() {
     },
     {
       id: 5,
-      image: 'path/to/image5.jpg',
+      image: 'src/groupImages/programmingG.png',
       title: 'Buff CSMC 131',
       description: "For CMSC 131-ers who want some gym pals",
       labels: {
@@ -130,7 +130,7 @@ export default function BrowseGroups() {
     },
     {
       id: 6,
-      image: 'path/to/image6.jpg',
+      image: 'src/groupImages/scienceG.png',
       title: "Future Physicists",
       description: 'Discuss physics problems and network with other Physics students.',
       labels: {
@@ -143,7 +143,7 @@ export default function BrowseGroups() {
     },
     {
       id: 7,
-      image: 'path/to/image7.jpg',
+      image: 'src/groupImages/scienceG.png',
       title: 'Chemistry Enthusiasts',
       description: 'Join us to explore the wonders of chemistry!',
       labels: {
