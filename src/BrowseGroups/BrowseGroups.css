@@ -3,13 +3,16 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0px;
 }
-.header {
+.header3 {
+    background-color: #F3EDF7;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #230404;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: 40px;
-    color:#000000;
-}
+  }
 .BrowseGroups .label {
     position: relative;
     padding-left: 25px;

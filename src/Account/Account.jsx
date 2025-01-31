@@ -122,7 +122,7 @@ const Account = () => {
   return (
     <div className="account-page">
       <div className="account-container">
-        <h1>Account</h1>
+        <div className="header1">Account</div>
         <form>
           <div className="form-group">
             <label htmlFor="majorMinor">Major/Minor:</label>
