@@ -65,7 +65,7 @@ export default function BrowseGroups() {
   const groups = [
     {
       id: 1,
-      image: 'src/groupImages/programmingG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Programming.jpg',
       title: 'CS Warriors',
       description: "We're in Elias Gonzalez's CMSC 132 class, with experience ranging from beginner to experienced.",
       labels: {
@@ -78,7 +78,7 @@ export default function BrowseGroups() {
     },
     {
       id: 2,
-      image: 'src/groupImages/mathG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Calculus.jpg',
       title: 'MATH 140 Study Group',
       description: 'For all sufferers of MATH 140.',
       labels: {
@@ -91,7 +91,7 @@ export default function BrowseGroups() {
     },
     {
       id: 3,
-      image: 'src/groupImages/englishG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Public Speaking.jpg',
       title: 'Public Speakers',
       description: "Open to all Public Speaking students! A safe space to practice your speeches :)",
       labels: {
@@ -104,7 +104,7 @@ export default function BrowseGroups() {
     },
     {
       id: 4,
-      image: 'src/groupImages/mathG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Calculus II.png',
       title: 'MATH 141',
       description: 'Study calc II problems with us and make friends :D',
       labels: {
@@ -117,7 +117,7 @@ export default function BrowseGroups() {
     },
     {
       id: 5,
-      image: 'src/groupImages/programmingG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/programmingG.png',
       title: 'Buff CSMC 131',
       description: "For CMSC 131-ers who want some gym pals",
       labels: {
@@ -130,7 +130,7 @@ export default function BrowseGroups() {
     },
     {
       id: 6,
-      image: 'src/groupImages/scienceG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/scienceG.png',
       title: "Future Physicists",
       description: 'Discuss physics problems and network with other Physics students.',
       labels: {
@@ -143,7 +143,7 @@ export default function BrowseGroups() {
     },
     {
       id: 7,
-      image: 'src/groupImages/scienceG.png',
+      image: 'src/BrowseGroups/BrowseGroupsImages/Chemistry.jpeg',
       title: 'Chemistry Enthusiasts',
       description: 'Join us to explore the wonders of chemistry!',
       labels: {

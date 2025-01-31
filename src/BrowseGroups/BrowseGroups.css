@@ -61,8 +61,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 175px;
-    height: 200px;
+    width: 180px;
+    height: 210px;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #FFFACD;
@@ -71,8 +71,8 @@ body {
 }
 .grid .container .item {
     background-color: #F3EDF7;
-    width: 175px;
-    height: 105px;
+    width: 180px;
+    height: 115px;
     border-radius: 20px;
     border: 1px solid #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
