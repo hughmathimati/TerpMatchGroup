@@ -414,7 +414,7 @@ export default function BrowseGroups() {
 
   return (
     <div className="content">
-      <div className="header">Browse Groups</div>
+      <div className="header3">Browse Groups</div>
       <div className="labels-row">
         <Select
           className="label-dropdown"

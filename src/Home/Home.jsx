@@ -74,8 +74,7 @@ const match_image = [
 export default function Home() {
   return (<>
 
-  <div className="header">Home</div>
-    <div className="subtitle">Your Profile</div>
+  <div className="header2">Home</div>
 
     <div className="title">Current Classes →</div>
     <div className="grid">
